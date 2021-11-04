@@ -608,6 +608,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
   }
 }
 @media only screen and (max-width: 991px) {
+  .row-fluid {
+    max-width: 95% !important;
+  }
+
   .navbar-menu {
     position: fixed;
     top: 0px;

@@ -111,7 +111,7 @@ AOS.init();
 
 //Page En Languages
 
-$(".home > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/index.html");
+$(".menuContainerHome > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/index.html");
 $(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/AboutUs.html");
 $(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/ContactsUs.html");
 $(".menuContainerPortfolio > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/Portfolio.html");
@@ -122,11 +122,11 @@ $(".menuContainerServicesWebDesign > .navbar-header-1 > .row-fluid > .navbar-Lan
 
 //Page Es Languages
 
-$(".home > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/index.html");
-$(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/AboutUs.html");
-$(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ContactsUs.html");
+$(".menuContainerHome > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Inicio.html");
+$(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/AcercaDeNosotros.html");
+$(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ContactoConNosotros.html");
 $(".menuContainerPortfolio > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Portfolio.html");
-$(".menuContainerServices > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Services.html");
+$(".menuContainerServices > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Servicios.html");
 $(".menuContainerServicesGraphicDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ServicesGraphicDesign.html");
 $(".menuContainerServicesIllustration > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ServicesIllustration.html");
 $(".menuContainerServicesWebDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ServicesWebDesign.html");
