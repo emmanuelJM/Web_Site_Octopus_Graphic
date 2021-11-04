@@ -2,6 +2,7 @@
 body {
   background-color: #12141D !important;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -183,8 +184,8 @@ li.breadcrumb-item > a:hover {
 }
 
 /* modal */
-.modal-content {
-  background-color: #292E3F;
+.col-modal-section {
+  margin: auto;
 }
 
 .modal-dialog {
@@ -227,8 +228,11 @@ li.breadcrumb-item > a:hover {
   font-size: 20px;
 }
 
+.modal-content {
+  background-color: #292E3F;
+}
+
 .Paragraph-modal-section {
-  margin: 20vh 0;
   font-size: 14px;
 }
 

@@ -41,11 +41,13 @@ $black: #222a42;
 body {
     background-color: $purple !important;
     color: $white;
+    overflow-x:hidden;
 }
 
 body, html{
     width: 100%;
     height: 100%;
+
 }
 
 li {
@@ -224,8 +226,8 @@ li.breadcrumb-item > a:hover {
 
 /* modal */
 
-.modal-content {
-    background-color: $secondary;
+.col-modal-section{
+    margin: auto;
 }
 
 .modal-dialog {
@@ -268,8 +270,11 @@ li.breadcrumb-item > a:hover {
     font-size: 20px;
 }
 
+.modal-content {
+    background-color: $secondary;
+}
+
 .Paragraph-modal-section {
-    margin: 20vh 0;
     font-size: 14px;
 }
 
