@@ -18,7 +18,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="/CSS/main.css">
 
     <!-- Icons CSS -->
 
@@ -30,7 +30,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <title>Octopus Graphic</title>
-    <link rel="shortcut icon" href="Img/Icon_web.ico">
+    <link rel="shortcut icon" href="/Img/Icon_web.ico">
 
 </head>
 
@@ -91,7 +91,7 @@
           </div>
 
           <div class="col-sm col-Service">
-            <img src="Img/Web-Design-Services.png" class="img-fluid img-Service" alt="Graphic-Design-Services">
+            <img src="/Img/Web-Design-Services.png" class="img-fluid img-Service" alt="Graphic-Design-Services">
           </div>
 
         </div>
@@ -140,46 +140,54 @@
 
     <!-- End header-2 -->
 
-    <!-- script menu  -->
+  <!-- script menu  -->
 
-    <script>
-      $(document).ready(function () {
-        $('.menuContainer').load('./header.html');
-      });
-    </script>
+  <script>
+    $(document).ready(function () {
+      $('.menuContainer').load('../Widget/header.html');
+    });
+  </script>
 
   <!-- script My Work  -->
 
   <script>
     $(document).ready(function () {
-      $('.MyWorkContainer').load('./MyWork.html');
+      $('.MyWorkContainer').load('../Widget/MyWork.html');
     });
     </script>
 
     <script>
     $(document).ready(function () {
-      $('.LatestProjectsGraphicDesign').load('./LatestProjectsGraphicDesign.html');
+      $('.LatestProjectsGraphicDesign').load('../Widget/LatestProjectsGraphicDesign.html');
     });
     </script>
 
     <script>
     $(document).ready(function () {
-      $('.LatestProjectsIllustration').load('./LatestProjectsIllustration.html');
+      $('.LatestProjectsIllustration').load('../Widget/LatestProjectsIllustration.html');
     });
     </script>
 
     <script>
     $(document).ready(function () {
-      $('.LatestProjectsWebDesign').load('./LatestProjectsWebDesign.html');
+      $('.LatestProjectsWebDesign').load('../Widget/LatestProjectsWebDesign.html');
     });
+    </script>
+
+    <!-- script modal  -->
+
+    <script>
+      $(document).ready(function () {
+      $('.Modal').load('../Widget/Modal.html');
+      });
     </script>
 
     <!-- script footer  -->
 
     <script>
-    $(document).ready(function () {
-      $('.footerContainer').load('./footer.html');
-    });
+      $(document).ready(function () {
+        $('.footerContainer').load("../Widget/footer.html");
+      });
     </script>
 
     <!-- Bootstrap Js  -->
@@ -193,7 +201,7 @@
 
     <!-- Js  -->
 
-    <script defer src="JS/main.js"></script>
+    <script defer src="../JS/main.js"></script>
 
 </body>
 </html>
