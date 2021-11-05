@@ -109,8 +109,10 @@ $(document).ready(function(){
 
 AOS.init();
 
-//Ssl
+// Global site tag (gtag.js) - Google Analytics 
 
-if (location.protocol != 'https:') {
- location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-RWC7Z0XSP2');
