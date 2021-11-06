@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -55,6 +55,22 @@
 
 <body>
 
+<?php 
+$myemail = 'emaj0510@gmail.com';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+
+$to = $myemail;
+$email_subject = "Nuevo mensaje: $subject";
+$email_body = "Haz recibido un nuevo mensaje. \n Name: $name \n Email: $email \n phone: $phone \n Mensaje: \n $message"  ;
+$headers = "From: $email";
+
+mail($to, $email_subject, $email_body, $headers);
+echo "El mensaje se ha enviado correctamente";
+?>
+
     <!-- Start header -->
 
     <div class="menuContainer menuContainerContactsUS"></div>
@@ -76,7 +92,7 @@
 
           <div class="col-sm">
 
-            <form action="/php/main.php" method="get">
+          <form action="/php/main.php" method="get">
 
               <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Name</label>
               <input type="text" class="form-control" name="name" id="FormControlName" placeholder="Your Name">
