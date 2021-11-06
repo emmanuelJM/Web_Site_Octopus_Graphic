@@ -76,7 +76,7 @@
 
           <div class="col-sm">
 
-            <form action="/php/main.php" method="get">
+            <form action="enviar.php" method="post" id="Form-ContactsUS">
 
               <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Name</label>
               <input type="text" class="form-control" name="name" id="FormControlName" placeholder="Your Name">
@@ -88,7 +88,7 @@
               <input type="tel" class="form-control" name="phone" id="FormControlPhone" placeholder="Your Phone">
 
             <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Service to consult</label>
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="service">
               <option selected>Open this select menu</option>
               <option value="1">Graphic Design</option>
               <option value="2">Illustration</option>
@@ -98,9 +98,11 @@
             <label for="exampleFormControlTextarea1" class="form-label form-label-ContactsUs">Example textarea</label>
             <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="6"></textarea>
 
-          <input type="submit" class="btn btn-primary" value="Send">
+          <button type="submit" class="btn btn-Send btn-primary">Send</button>
 
           </form>
+
+          <a href="mailto:octopusgraphic05@gmail.com" id="send-Email"></a>
 
           </div>
 
@@ -118,8 +120,6 @@
     <!-- End Footer -->
 
     <!-- End header-2 -->
-
-    <!-- script menu  -->
 
   <!-- script menu  -->
 
