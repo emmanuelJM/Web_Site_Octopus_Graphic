@@ -159,6 +159,11 @@ li.breadcrumb-item > a:hover {
   color: rgba(0, 165, 181, 0.5) !important;
 }
 
+/* Bot */
+#hubspot-messages-iframe-container.widget-align-right {
+  margin-bottom: 30px;
+}
+
 /* pagination */
 .pagination.pagination-lg {
   justify-content: center;

@@ -68,45 +68,43 @@
     <div class="container-body">
 
 
-        <div class="row row-fluid">
+      <div class="row row-fluid">
 
-          <div class="col-sm">
+      <div class="col-sm">
             
-          </div>
+      </div>
 
-          <div class="col-sm">
+      <div class="col-sm">
 
-            <form action="enviar.php" method="post" id="Form-ContactsUS">
+        <form   action="https://formspree.io/f/xgerjrze" method="POST" id="Form-ContactsUS">
 
-              <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Name</label>
-              <input type="text" class="form-control" name="name" id="FormControlName" placeholder="Your Name">
+        <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Name</label>
+        <input type="text" class="form-control" name="message" id="FormControlName" placeholder="Your Name">
 
-              <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Email</label>
-              <input type="email" class="form-control" name="email" id="FormControlEmail" placeholder="Your Email">
+        <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Email</label>
+        <input type="email" class="form-control" name="_replyto" id="FormControlEmail" placeholder="Your Email">
 
-              <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Phone</label>
-              <input type="tel" class="form-control" name="phone" id="FormControlPhone" placeholder="Your Phone">
+        <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Your Phone</label>
+        <input type="tel" class="form-control" name="message" id="FormControlPhone" placeholder="Your Phone">
 
-            <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Service to consult</label>
-            <select class="form-select" aria-label="Default select example" name="service">
-              <option selected>Open this select menu</option>
-              <option value="1">Graphic Design</option>
-              <option value="2">Illustration</option>
-              <option value="3">WebDesign</option>
-            </select>
+        <label for="exampleFormControlInput1" class="form-label form-label-ContactsUs">Service to consult</label>
+        <select class="form-select" aria-label="Default select example" name="message">
+          <option selected>Open this select menu</option>
+          <option value="Graphic Design">Graphic Design</option>
+          <option value="Illustration">Illustration</option>
+          <option value="WebDesign">WebDesign</option>
+        </select>
 
-            <label for="exampleFormControlTextarea1" class="form-label form-label-ContactsUs">Example textarea</label>
-            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="6"></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label form-label-ContactsUs">Example textarea</label>
+        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="6"></textarea>
 
-          <button type="submit" class="btn btn-Send btn-primary">Send</button>
+        <button type="submit" class="btn btn-Send btn-primary">Send</button>
 
-          </form>
+        </form>
 
-          <a href="mailto:octopusgraphic05@gmail.com" id="send-Email"></a>
+      </div>
 
-          </div>
-
-        </div>
+      </div>
 
 
     </div>
@@ -121,67 +119,84 @@
 
     <!-- End header-2 -->
 
-  <!-- script menu  -->
+<script>
 
-  <script>
-    $(document).ready(function () {
-      $('.menuContainer').load('/Widget/header.html');
-    });
+//script menu
+
+  $(document).ready(function () {
+    $('.menuContainer').load('/Widget/header.html');
+  });
+
+//ContactsUs
+
+const $form = document.querySelector('#Form-ContactsUS')
+
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if (response.ok){
+        this.reset()
+        alert('Thank you for contacting us ')
+    }
+}
+
+// script My Work 
+
+  $(document).ready(function () {
+    $('.MyWorkContainer').load('/Widget/MyWork.html');
+  });
+
+  $(document).ready(function () {
+    $('.LatestProjectsGraphicDesign').load('/Widget/LatestProjectsGraphicDesign.html');
+  });
+
+  $(document).ready(function () {
+    $('.LatestProjectsIllustration').load('/Widget/LatestProjectsIllustration.html');
+  });
+
+  $(document).ready(function () {
+    $('.LatestProjectsWebDesign').load('/Widget/LatestProjectsWebDesign.html');
+  });
+
+  // script modal
+
+  $(document).ready(function () {
+    $('.Modal').load('/Widget/Modal.html');
+  });
+
+  // script footer
+
+  $(document).ready(function () {
+    $('.footerContainer').load("/Widget/footer.html");
+  });
+
   </script>
 
-  <!-- script My Work  -->
+<!-- Bootstrap Js  -->
 
-  <script>
-    $(document).ready(function () {
-      $('.MyWorkContainer').load('/Widget/MyWork.html');
-    });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <script>
-    $(document).ready(function () {
-      $('.LatestProjectsGraphicDesign').load('/Widget/LatestProjectsGraphicDesign.html');
-    });
-    </script>
+<!-- Icons Js  -->
 
-    <script>
-    $(document).ready(function () {
-      $('.LatestProjectsIllustration').load('/Widget/LatestProjectsIllustration.html');
-    });
-    </script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/v4-shims.js"></script>
 
-    <script>
-    $(document).ready(function () {
-      $('.LatestProjectsWebDesign').load('/Widget/LatestProjectsWebDesign.html');
-    });
-    </script>
+<!-- Js  -->
 
-    <!-- script modal  -->
+<script defer src="/JS/main.js"></script>
 
-    <script>
-      $(document).ready(function () {
-      $('.Modal').load('/Widget/Modal.html');
-      });
-    </script>
+<!-- Start of HubSpot Embed Code -->
 
-    <!-- script footer  -->
-
-    <script>
-      $(document).ready(function () {
-        $('.footerContainer').load("/Widget/footer.html");
-      });
-    </script>
-    <!-- Bootstrap Js  -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
-    <!-- Icons Js  -->
-
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/v4-shims.js"></script>
-
-    <!-- Js  -->
-
-    <script defer src="/JS/main.js"></script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20977624.js"></script>
 
 </body>
 </html>
