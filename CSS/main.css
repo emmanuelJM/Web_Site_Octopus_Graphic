@@ -559,6 +559,36 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
   display: none !important;
 }
 
+/* ContactsUs */
+#Form-ContactsUS {
+  margin: 50px 0;
+}
+
+select:invalid {
+  border: 0.5px solid #f5365c !important;
+}
+
+input:invalid, textarea:invalid {
+  border: 0.5px solid #f5365c;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+  outline: none;
+}
+
+input:valid, textarea:valid {
+  border: 0.5px solid #2dce89;
+}
+
+.form-label:after {
+  content: "*";
+  color: red;
+}
+
+.g-recaptcha {
+  padding: 20px 0;
+}
+
 /* Footer */
 .container-Footer {
   color: #ffffff;
