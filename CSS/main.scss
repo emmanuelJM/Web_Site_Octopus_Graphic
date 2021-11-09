@@ -259,6 +259,11 @@ li.breadcrumb-item > a:hover {
     background: transparent url(https://cdn.glitch.com/23f2e91e-8a81-476d-bf57-37b1db51c6a4%2Fwhite_x.png?v=1632856179380) center/1em auto no-repeat;
 }
 
+.popupContent {
+    background: $secondary !important;
+    border: none !important;
+}
+
 /* Modal Portfolio Gallery*/
 
 .col-modal-logo {
