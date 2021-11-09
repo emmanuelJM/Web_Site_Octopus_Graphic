@@ -335,7 +335,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
 }
 
 .icon-default > g > path {
-    stroke: #fff !important;
+    stroke: $white !important;
 }
 
 .ecwid-search-widget {
@@ -869,34 +869,50 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-butto
 
 @media only screen and (max-width: 700px) {
 
+/* header-2 */
+
+.col-sm-6.col-header-2 {
+    order: 2;
+}
+
+.col-header-2-cart {
+    position: absolute !important;
+    margin-bottom: 45px;
+    margin-left: -70px;
+}
+
+.col-header-2-search {
+    margin-top: 20px;
+}
+
 /* Portfolio modal */
 
-    .modal-body > img {
-        width: 100% !important;
-        margin: 0 auto;
-    }
+.modal-body > img {
+    width: 100% !important;
+    margin: 0 auto;
+}
 
-    .img-modal-2 {
-        padding: 0 10%;
-    }
+.img-modal-2 {
+    padding: 0 10%;
+}
     
-    .col-edit-position{
-        order: 2;
-    }
+.col-edit-position{
+    order: 2;
+}
 
 /* Portfolio Filter Gallery */
 
-    .col-My-Work {
-        flex: none;
-        width: 100% !important;
-        margin: 25px auto;
-    }
+.col-My-Work {
+    flex: none;
+    width: 100% !important;
+    margin: 25px auto;
+}
 
 /* ContactsUs */
 
-   .btn-Form-ContactsUS {
-       width: 100%;
-    }
+.btn-Form-ContactsUS {
+    width: 100%;
+}
     
 
 }

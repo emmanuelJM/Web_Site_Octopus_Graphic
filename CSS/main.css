@@ -289,7 +289,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
 }
 
 .icon-default > g > path {
-  stroke: #fff !important;
+  stroke: #ffffff !important;
 }
 
 .ecwid-search-widget {
@@ -794,6 +794,21 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-butto
   }
 }
 @media only screen and (max-width: 700px) {
+  /* header-2 */
+  .col-sm-6.col-header-2 {
+    order: 2;
+  }
+
+  .col-header-2-cart {
+    position: absolute !important;
+    margin-bottom: 45px;
+    margin-left: -70px;
+  }
+
+  .col-header-2-search {
+    margin-top: 20px;
+  }
+
   /* Portfolio modal */
   .modal-body > img {
     width: 100% !important;
