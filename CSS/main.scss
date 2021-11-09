@@ -3,6 +3,7 @@
 // Color system
 
 $blue: #00A5B5;
+$blue-dark: #069CAB;
 $indigo: #292E3F;
 $purple: #12141D;
 $pink: #f3a4b5;
@@ -329,12 +330,44 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
     background-color: $primary !important;
 }
 
-.navbar-menu {
-    justify-content: flex-end;
+.Logo {
+    width: 10rem;
+}
+
+.icon-default > g > path {
+    stroke: #fff !important;
+}
+
+.ecwid-search-widget {
+    max-width: 100% !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
+    background: $white !important;
+    color: $primary !important;
+}
+
+/* header-3 */
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-3 {
+    background-color: $blue-dark !important;
 }
 
 .Logo {
     width: 10rem;
+}
+
+.ecwid-search-widget__input {
+    border-radius: 4px !important;
+}
+
+.ecwid-search-widget-icon {
+    fill: $primary !important;
+}
+
+.ec-cart-widget {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Home */
@@ -682,6 +715,39 @@ input:valid, textarea:valid{
     opacity: 40%;
     font-size: 20px;
     margin-right: 20px;
+}
+
+/* Store */
+
+.ecwid-popup {
+    top: 50px !important;
+}
+
+.ec-footer__row {
+    background: none !important;
+}
+
+li.ec-footer__cell > a {
+    color: $primary !important;
+}
+
+li.ec-footer__cell > a:hover {
+    background: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-button .form-control__inline-label label:active, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-button .form-control__checkbox:checked ~ .form-control__inline-label label, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-button .form-control__radio:checked ~ .form-control__inline-label label {
+    background-image: none !important;
+    border-color: $primary !important;
+    background-color: $primary !important;
+    color: $white !important;
+}
+
+.form-control__button, .ecwid-btn {
+    background: $primary !important;
+}
+
+.row-Store {
+    margin-top: 25px !important;
 }
 
 /* Footer */

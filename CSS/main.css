@@ -284,12 +284,43 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
   background-color: #00A5B5 !important;
 }
 
-.navbar-menu {
-  justify-content: flex-end;
+.Logo {
+  width: 10rem;
+}
+
+.icon-default > g > path {
+  stroke: #fff !important;
+}
+
+.ecwid-search-widget {
+  max-width: 100% !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
+  background: #ffffff !important;
+  color: #00A5B5 !important;
+}
+
+/* header-3 */
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-3 {
+  background-color: #069CAB !important;
 }
 
 .Logo {
   width: 10rem;
+}
+
+.ecwid-search-widget__input {
+  border-radius: 4px !important;
+}
+
+.ecwid-search-widget-icon {
+  fill: #00A5B5 !important;
+}
+
+.ec-cart-widget {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Home */
@@ -627,6 +658,38 @@ input:valid, textarea:valid {
   opacity: 40%;
   font-size: 20px;
   margin-right: 20px;
+}
+
+/* Store */
+.ecwid-popup {
+  top: 50px !important;
+}
+
+.ec-footer__row {
+  background: none !important;
+}
+
+li.ec-footer__cell > a {
+  color: #00A5B5 !important;
+}
+
+li.ec-footer__cell > a:hover {
+  background: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-button .form-control__inline-label label:active, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-button .form-control__checkbox:checked ~ .form-control__inline-label label, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-button .form-control__radio:checked ~ .form-control__inline-label label {
+  background-image: none !important;
+  border-color: #00A5B5 !important;
+  background-color: #00A5B5 !important;
+  color: #ffffff !important;
+}
+
+.form-control__button, .ecwid-btn {
+  background: #00A5B5 !important;
+}
+
+.row-Store {
+  margin-top: 25px !important;
 }
 
 /* Footer */
