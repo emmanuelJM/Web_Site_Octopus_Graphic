@@ -216,6 +216,29 @@ li.breadcrumb-item > a:hover {
   background: transparent url(https://cdn.glitch.com/23f2e91e-8a81-476d-bf57-37b1db51c6a4%2Fwhite_x.png?v=1632856179380) center/1em auto no-repeat;
 }
 
+.popupContent {
+  background: #292E3F !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.grid-product__price-value.ec-price-item, .grid-product__title-inner {
+  color: #fff !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
+  color: #fff !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser {
+  background: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link--muted, html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link--muted:visited {
+  color: #fff !important;
+  transition: color 0.12s ease-out 0s;
+}
+
 /* Modal Portfolio Gallery*/
 .col-modal-logo {
   margin: 50px 40%;
