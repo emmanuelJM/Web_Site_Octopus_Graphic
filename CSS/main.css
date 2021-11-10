@@ -715,6 +715,39 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-butto
   margin-top: 25px !important;
 }
 
+.ecsp {
+  border-radius: 7px !important;
+  background-size: cover !important;
+  justify-content: center !important;
+  position: relative !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.info-Product:hover {
+  opacity: 100% !important;
+}
+
+.info-Product {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-color: rgba(41, 46, 63, 0.7) !important;
+  opacity: 0% !important;
+  transition-duration: 1s !important;
+}
+
+.ecwid-SingleProduct-picture {
+  margin: 0 !important;
+}
+
+.ecsp-title {
+  margin-top: 30% !important;
+}
+
 /* Footer */
 .container-Footer {
   color: #ffffff;
