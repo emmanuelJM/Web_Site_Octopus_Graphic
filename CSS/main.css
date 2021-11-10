@@ -324,6 +324,10 @@ html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
   color: #00A5B5 !important;
 }
 
+.col-header-2-Img {
+  padding-left: 0;
+}
+
 /* header-3 */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-3 {
   background-color: #069CAB !important;
