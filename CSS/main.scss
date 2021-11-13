@@ -38,6 +38,13 @@ $black: #222a42;
 
 /*CSS*/
 
+*,*:after, *:before{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
     background-color: $purple !important;
@@ -200,10 +207,132 @@ li.breadcrumb-item > a:hover {
     color:rgb(0, 165, 181, 0.5) !important;
 }
 
+/* Loading */
+
+#ContainerLoading{
+  background-color: rgba(41, 46, 63, .99);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#Loading{
+    border: 15px solid $gray-600;
+    border-top-color: $primary;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: turn 1.5s linear infinite;
+    -o-animation: turn 1.5s linear infinite;
+    animation: turn 1.5s linear infinite;
+}
+
+@keyframes turn{
+    from{ transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* header-1 */
+
+.navbar-menu-floating {
+    position: none;
+    background: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: $white;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-1 {
+    background-color: $indigo !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-1, .navbar-light .navbar-text, .navbar-light .navbar-nav .nav-link {
+    color: $white !important;
+}
+
+li.nav-item.dropdown {
+    color: $white !important;
+}
+
+.nav-link {
+    color: $white;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: $primary !important;
+}
+
+.navbar-Languages {
+    justify-content: flex-end;
+}
+
+/* header-2 */
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
+    background-color: $primary !important;
+}
+
+.Logo {
+    width: 10rem;
+}
+
+.icon-default > g > path {
+    stroke: $white !important;
+}
+
+.ecwid-search-widget {
+    max-width: 100% !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
+    background: $white !important;
+    color: $primary !important;
+}
+
+.col-header-2-Img{
+    padding-left: 0;
+}
+
+/* header-3 */
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-3 {
+    background-color: $blue-dark !important;
+}
+
+.Logo {
+    width: 10rem;
+}
+
+.ecwid-search-widget__input {
+    border-radius: 4px !important;
+}
+
+.ecwid-search-widget-icon {
+    fill: $primary !important;
+}
+
+.ec-cart-widget {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Bot */
 
 #hubspot-messages-iframe-container.widget-align-right {
     margin-bottom: 30px;
+    z-index: 100 !important;
 }
 
 /* pagination */
@@ -311,93 +440,6 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link--muted, html#ecwid_h
 .img-modal-2 {
     padding: 0 30%;
 }
-
-/* header-1 */
-
-.navbar-menu-floating {
-    position: none;
-    background: none;
-}
-
-.navbar-light .navbar-toggler {
-    color: $white;
-}
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-1 {
-    background-color: $indigo !important;
-}
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-1, .navbar-light .navbar-text, .navbar-light .navbar-nav .nav-link {
-    color: $white !important;
-}
-
-li.nav-item.dropdown {
-    color: $white !important;
-}
-
-.nav-link {
-    color: $white;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-    background-color: $primary !important;
-}
-
-.navbar-Languages {
-    justify-content: flex-end;
-}
-
-/* header-2 */
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
-    background-color: $primary !important;
-}
-
-.Logo {
-    width: 10rem;
-}
-
-.icon-default > g > path {
-    stroke: $white !important;
-}
-
-.ecwid-search-widget {
-    max-width: 100% !important;
-}
-
-html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
-    background: $white !important;
-    color: $primary !important;
-}
-
-.col-header-2-Img{
-    padding-left: 0;
-}
-
-/* header-3 */
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-3 {
-    background-color: $blue-dark !important;
-}
-
-.Logo {
-    width: 10rem;
-}
-
-.ecwid-search-widget__input {
-    border-radius: 4px !important;
-}
-
-.ecwid-search-widget-icon {
-    fill: $primary !important;
-}
-
-.ec-cart-widget {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* Home */
 
 /* Cover Home */
 

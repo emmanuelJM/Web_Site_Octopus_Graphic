@@ -59,6 +59,10 @@
 
 <body> 
 
+    <!-- Screen Loading -->
+
+    <div class="ScreenLoadingContainer"></div>
+
     <!-- Start header -->
 
     <div class="menuContainer menuContainerHome"></div>
@@ -150,6 +154,12 @@
     <!-- End Footer -->
 
 <script>
+
+//Screen Loading
+
+  $(document).ready(function () {
+    $('.ScreenLoadingContainer').load('/Widget/ScreenLoading.html');
+  });
 
 //script menu
 
