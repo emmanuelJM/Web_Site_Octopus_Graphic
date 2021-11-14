@@ -868,7 +868,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox-butto
     right: 0px;
     padding: 0px 0px 0px 0px;
     width: 100%;
-    z-index: 5;
+    z-index: 1000;
     background: #00A5B5;
     height: 100vh;
     overflow-y: auto;
