@@ -8,7 +8,7 @@
                     Octopus Graphic
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="/index.html">Octopus Graphic</a></li>
+                    <li><a class="dropdown-item" href="index.php">Octopus Graphic</a></li>
                     <li><a class="dropdown-item" href="#">Monkey Indie Studio</a></li>
                 </ul>
             </li>
@@ -37,25 +37,34 @@
         <div class="container-fluid row-fluid row">
 
         <div class="col-sm col-header-2 col-header-2-Img">
-            <a href="/index.html">
-                <img src="/Img/Logo-Octopus-Graphic.png" alt="Logo-Octopus-Graphic" class="Logo">
+            <a href="index.php">
+                <img src="Img/Logo-Octopus-Graphic.png" alt="Logo-Octopus-Graphic" class="Logo">
             </a>
         </div>
 
         <div class="col-sm-6 col-header-2 col-header-2-search">
-            <div id="my-search-23252877"></div>
-            <div>
-            <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?23252877&data_platform=code&data_date=2021-11-09" charset="utf-8"></script>
-            <script type="text/javascript"> xSearch("id=my-search-23252877"); </script>
-            </div>
+
+                <form action="" class="site-block-top-search">
+                  <span class="icon icon-search2"></span>
+                  <input type="text" class="form-control border-0" placeholder="Search">
+                </form>
+
         </div>
 
         <div class="col-sm col-header-2 col-header-2-cart">
-              <div class="ec-cart-widget"></div>
-              <div>
-              <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?23252877&data_platform=code&data_date=2021-11-09" charset="utf-8"></script>
-              <script type="text/javascript">Ecwid.init();</script>
-              </div>
+            <div class="site-top-icons">
+                <ul>
+                  <li><a href="#"><span class="icon icon-person"></span></a></li>
+                  <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
+                  <li>
+                    <a href="ShoppingCart/cart.php" class="site-cart">
+                      <span class="icon icon-shopping_cart"></span>
+                      <span class="count">2</span>
+                    </a>
+                  </li> 
+                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                </ul>
+              </div> 
         </div>
             
         </div>
@@ -79,30 +88,30 @@
                   </button>
 
                 <li class="nav-item">
-                    <a class="nav-link active nav-link-secondary" aria-current="page" href="/index.html">Home</a>
+                    <a class="nav-link active nav-link-secondary" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-secondary" href="/En/AboutUs.html">About Us</a>
+                    <a class="nav-link nav-link-secondary" href="AboutUs.php">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-link-secondary" href="/En/Services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-link-secondary" href="Services.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/En/Services.html">Services</a></li>
-                        <li><a class="dropdown-item" href="/En/ServicesGraphicDesign.html">Graphic Design</a></li>
-                        <li><a class="dropdown-item" href="/En/ServicesWebDesign.html">Web Design</a></li>
-                        <li><a class="dropdown-item" href="/En/ServicesIllustration.html">Illustration</a></li>
+                        <li><a class="dropdown-item" href="Services.php">Services</a></li>
+                        <li><a class="dropdown-item" href="ServicesGraphicDesign.php">Graphic Design</a></li>
+                        <li><a class="dropdown-item" href="ServicesWebDesign.php">Web Design</a></li>
+                        <li><a class="dropdown-item" href="ServicesIllustration.php">Illustration</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-secondary" href="/En/Portfolio.html">Portfolio</a>
+                    <a class="nav-link nav-link-secondary" href="Portfolio.php">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-secondary" href="/En/Store.html">Store</a>
+                    <a class="nav-link nav-link-secondary" href="Store.php">Store</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-secondary" href="/En/ContactsUs.html">Contacts Us</a>
+                    <a class="nav-link nav-link-secondary" href="ContactsUs.php">Contacts Us</a>
                 </li>
 
             </div>
@@ -119,27 +128,27 @@
 
  //Page En Languages
 
-$(".menuContainerHome > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/index.html");
-$(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/AboutUs.html");
-$(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/ContactsUs.html");
-$(".menuContainerPortfolio > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/Portfolio.html");
-$(".menuContainerServices > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/Services.html");
-$(".menuContainerServicesGraphicDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/ServicesGraphicDesign.html");
-$(".menuContainerServicesIllustration > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/ServicesIllustration.html");
-$(".menuContainerServicesWebDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/ServicesWebDesign.html");
-$(".menuContainerStore > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "/En/Store.html");
+$(".menuContainerHome > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../index.php");
+$(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/AboutUs.php");
+$(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/ContactsUs.php");
+$(".menuContainerPortfolio > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/Portfolio.php");
+$(".menuContainerServices > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/Services.php");
+$(".menuContainerServicesGraphicDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/ServicesGraphicDesign.php");
+$(".menuContainerServicesIllustration > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/ServicesIllustration.php");
+$(".menuContainerServicesWebDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/ServicesWebDesign.php");
+$(".menuContainerStore > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-En").prop("href", "../En/Store.php");
 
 //Page Es Languages
 
-$(".menuContainerHome > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Inicio.html");
-$(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/AcercaDeNosotros.html");
-$(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ContactaConNosotros.html");
-$(".menuContainerPortfolio > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Portfolio.html");
-$(".menuContainerServices > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Servicios.html");
-$(".menuContainerServicesGraphicDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ServiciosDiseñoGráfico.html");
-$(".menuContainerServicesIllustration > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ServiciosIlustración.html");
-$(".menuContainerServicesWebDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/ServiciosDiseñoWeb.html");
-$(".menuContainerStore > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "/Es/Tienda.html");
+$(".menuContainerHome > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/Inicio.php");
+$(".menuContainerAboutUs > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/AcercaDeNosotros.php");
+$(".menuContainerContactsUS > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/ContactaConNosotros.php");
+$(".menuContainerPortfolio > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/Portfolio.php");
+$(".menuContainerServices > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/Servicios.php");
+$(".menuContainerServicesGraphicDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/ServiciosDiseñoGráfico.php");
+$(".menuContainerServicesIllustration > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/ServiciosIlustración.php");
+$(".menuContainerServicesWebDesign > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/ServiciosDiseñoWeb.php");
+$(".menuContainerStore > .navbar-header-1 > .row-fluid > .navbar-Languages > .nav-item > .dropdown-menu > li > #dropdown-item-Es").prop("href", "../Es/Tienda.php");
  
 </script>
 

@@ -209,6 +209,75 @@ li.breadcrumb-item > a:hover {
     transform: rotate(360deg);
   }
 }
+/* search header */
+.site-block-top-search {
+  position: relative;
+}
+
+.site-block-top-search .icon {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  color: #292E3F;
+  transform: translateY(-50%);
+}
+
+.site-block-top-search input {
+  padding-left: 40px;
+  transition: 0.3s all ease-in-out;
+}
+
+.site-block-top-search input:focus, .site-block-top-search input:active {
+  padding-left: 25px;
+}
+
+/* icon header */
+.site-top-icons {
+  text-align: right !important;
+}
+
+.site-top-icons ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-top-icons ul {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.site-top-icons ul li a.site-cart {
+  display: block;
+  position: relative;
+}
+
+.site-top-icons ul li a {
+  text-decoration: none !important;
+}
+
+.site-top-icons ul > li > a:hover {
+  color: #292E3F !important;
+  background: none !important;
+}
+
+.site-top-icons ul li a.site-cart .count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -15px;
+  margin-top: -20px;
+  font-size: 13px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  background: #292E3F;
+  color: #ffffff;
+  transition: 0.2s all ease-in-out;
+}
+
 /* header-1 */
 .navbar-menu-floating {
   position: none;
@@ -250,14 +319,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-header-2 {
 
 .Logo {
   width: 10rem;
-}
-
-.icon-default > g > path {
-  stroke: #ffffff !important;
-}
-
-.ecwid-search-widget {
-  max-width: 100% !important;
 }
 
 html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
